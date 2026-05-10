@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>omar</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+    }
+
+    .heart {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: red;
+      transform: rotate(-45deg);
+      top: 50px;
+      left: 50px;
+      animation: beat 1s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -100px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 100px;
+      top: 0;
+    }
+
+    .names {
+      position: absolute;
+      top: 130px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      z-index: 10;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .emoji {
+      position: absolute;
+      bottom: -40px;
+      width: 100%;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    @keyframes beat {
+      0% {
+        transform: rotate(-45deg) scale(1);
+      }
+
+      50% {
+        transform: rotate(-45deg) scale(1.1);
+      }
+
+      100% {
+        transform: rotate(-45deg) scale(1);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  
+
+  <div class="container">
+
+    <div class="heart"></div>
+
+    <div class="names">
+      عمر ❤️ سكينة
+    </div>
+
+    <div class="emoji">
+      💖 🌹 ✨ 💕
+    </div>
+
+  </div>
+
+</body>
+</html>
