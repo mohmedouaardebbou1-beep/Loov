@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفحة الأولى</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      padding: 15px 35px;
+      font-size: 25px;
+      border: none;
+      border-radius: 15px;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .btn:hover {
+      background-color: darkred;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <button class="btn" onclick="goPage()">
+    اضغط هنا ❤️
+  </button>
+
+  <script>
+    function goPage() {
+      window.location.href = "love.html";
+    }
+  </script>
+
+</body>
+</html>
